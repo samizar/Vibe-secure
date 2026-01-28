@@ -8,8 +8,9 @@ async function scanFolder(dir, fileList = []) {
     const filePath = path.join(dir, file);
     const stat = await fs.stat(filePath);
 
+    const ignoredDirs = ['node_modules', '.git', '.next', 'dist', 'build', 'out', 'coverage', '.vercel'];
     if (stat.isDirectory()) {
-      if (file !== 'node_modules' && file !== '.git') {
+      if (!ignoredDirs.includes(file)) {
         await scanFolder(filePath, fileList);
       }
     } else {

@@ -1,14 +1,23 @@
 {
   "name": "vibe-secure",
   "version": "1.0.0",
-  "description": "",
+  "description": "The security scanner for AI-generated applications code",
+  "bin": {
+    "vibe-secure": "index.js"
+  },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "security",
+    "scanner",
+    "ai",
+    "vibe-coding",
+    "cli"
+  ],
+  "author": "Vibe Secure Team",
+  "license": "MIT",
   "type": "commonjs",
   "dependencies": {
     "chalk": "^4.1.2",
