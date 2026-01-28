@@ -1,6 +1,6 @@
 {
   "name": "vibe-secure",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The security scanner for AI-generated applications code",
   "bin": {
     "vibe-secure": "index.js"
